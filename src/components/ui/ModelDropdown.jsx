@@ -33,9 +33,6 @@ const ModelDropdown = ({ selectedModel, onModelChange }) => {
         title={`Selected: ${selectedModelData.name}`}
       >
         <Icon icon={selectedModelData.icon} className="text-sm" />
-        <span className="hidden sm:inline max-w-24 truncate">
-          {selectedModelData.name}
-        </span>
         <Icon 
           icon={isOpen ? "mdi:chevron-up" : "mdi:chevron-down"} 
           className="text-gray-400 text-sm"
