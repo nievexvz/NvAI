@@ -6,6 +6,21 @@ export default {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        grotesk: [
+          "Space Grotesk",
+          "Montserrat",
+          "Inter",
+          "Segoe UI",
+          "sans-serif"
+        ],
+        inter: [
+          'Inter', 
+          "-apple-system", 
+          "BlinkMacSystemFont", 
+          "sans-serif"
+        ]
+      },
       backdropBlur: {
         xs: '2px',
       },
