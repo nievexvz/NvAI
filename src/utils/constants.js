@@ -13,7 +13,7 @@ export const MODELS = {
     provider: 'Groq',
     description: 'Ultra-fast Llama 3.1 model',
     color: 'from-green-500 to-emerald-500',
-    icon: 'ph:infinite-circle-broken'
+    icon: 'solar:infinite-circle-broken'
   },
   QWEN: {
     id: 'qwen',
