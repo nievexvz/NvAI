@@ -85,7 +85,7 @@ NvAI/
 ├── tailwind.config.js
 ├── vercel.json
 └── vite.config.js
-```⇝---
+```
 
 ---
 
