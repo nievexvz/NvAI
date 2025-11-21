@@ -13,7 +13,7 @@ export const MODELS = {
     provider: 'Groq',
     description: 'Ultra-fast Llama 3.1 model',
     color: 'from-green-500 to-emerald-500',
-    icon: 'simple-icons:groq'
+    icon: 'ph:ribbon-bold'
   },
   QWEN: {
     id: 'qwen',
@@ -21,7 +21,7 @@ export const MODELS = {
     provider: 'Groq',
     description: 'Powerful Qwen model with 32B parameters',
     color: 'from-blue-500 to-cyan-500',
-    icon: 'simple-icons:alibabacloud'
+    icon: 'ph:circuitry-bold'
   },
   KIMI: {
     id: 'kimi',
@@ -29,7 +29,7 @@ export const MODELS = {
     provider: 'Groq',
     description: 'Moonshot AI\'s Kimi model',
     color: 'from-orange-500 to-red-500',
-    icon: 'simple-icons:fire'
+    icon: 'fluent:bot-24-regular'
   },
   GPT_OSS: {
     id: 'gpt-oss',
@@ -45,7 +45,7 @@ export const MODELS = {
     provider: 'Groq',
     description: 'Distilled DeepSeek model',
     color: 'from-indigo-500 to-purple-500',
-    icon: 'simple-icons:deepseek'
+    icon: 'solar:radar-broken'
   }
 }
 
