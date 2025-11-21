@@ -47,7 +47,6 @@ VITE_DEEPSEEK_KEY=gsk_***
 ```
 NvAI/
 ├── public/
-│   └── public files (Image, etc...) 
 ├── src/
 │   ├── components/
 │   │   ├── chat/
@@ -62,7 +61,7 @@ NvAI/
 │   │   │   └── ModelSelector.jsx
 │   │   └── ui/
 │   │       ├── Button.jsx
-│   │       ├── ClassCard.jsx
+│   │       ├── GlassCard.jsx
 │   │       ├── Loading.jsx
 │   │       └── ModelDropdown.jsx
 │   ├── hooks/
