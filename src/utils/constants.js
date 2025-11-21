@@ -1,7 +1,7 @@
 export const MODELS = {
   GEMINI: {
     id: 'gemini',
-    name: 'Gemini Pro',
+    name: 'Gemini 2.0-flash',
     provider: 'Google',
     description: 'Google\'s advanced AI model',
     color: 'from-purple-500 to-pink-500',
@@ -17,7 +17,7 @@ export const MODELS = {
   },
   QWEN: {
     id: 'qwen',
-    name: 'Qwen 2.5 32B',
+    name: 'Qwen 3-32b',
     provider: 'Groq',
     description: 'Powerful Qwen model with 32B parameters',
     color: 'from-blue-500 to-cyan-500',
@@ -25,7 +25,7 @@ export const MODELS = {
   },
   KIMI: {
     id: 'kimi',
-    name: 'Moonshot V1',
+    name: 'Kimi K2 Instruct',
     provider: 'Groq',
     description: 'Moonshot AI\'s Kimi model',
     color: 'from-orange-500 to-red-500',
@@ -33,7 +33,7 @@ export const MODELS = {
   },
   GPT_OSS: {
     id: 'gpt-oss',
-    name: 'OpenHermes 2.5',
+    name: 'GPT-4 Turbo',
     provider: 'Groq',
     description: 'Open source GPT model',
     color: 'from-yellow-500 to-orange-500',
@@ -56,8 +56,8 @@ export const API_ENDPOINTS = {
 
 export const GROQ_MODELS = {
   'groq-llama': 'llama-3.1-8b-instant',
-  'qwen': 'qwen-2.5-32b',
-  'kimi': 'moonshotai/Kimi-K2-Instruct-0905',
+  'qwen': 'qwen/qwen3-32b',
+  'kimi': 'moonshotai/kimi-k2-instruct-0905',
   'gpt-oss': 'openai/gpt-oss-120b',
-  'deepseek-r1': 'deepseek-r1-distill-qwen-32b'
+  'deepseek-r1': 'whisper-large-v3-turbo'
 }
