@@ -1,0 +1,130 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Base Styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body, #root {
+  height: 100%;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #1e1e2e 0%, #181825 50%, #11111b 100%);
+  color: #cdd6f4;
+  overflow-x: hidden;
+}
+
+/* Glassmorphism Components */
+@layer components {
+  .glass {
+    @apply bg-dark-100/70 backdrop-blur-xl border border-white/10;
+  }
+  
+  .glass-light {
+    @apply bg-dark-100/40 backdrop-blur-lg border border-white/5;
+  }
+  
+  .glass-card {
+    @apply glass rounded-2xl shadow-2xl;
+  }
+  
+  .message-user {
+    @apply bg-gradient-to-br from-primary-100/20 to-primary-200/20 border border-primary-200/30;
+  }
+  
+  .message-ai {
+    @apply bg-dark-100/60 border border-white/10;
+  }
+  
+  .btn-primary {
+    @apply bg-primary-200 text-dark-300 hover:bg-primary-100 transition-all duration-200 font-medium;
+  }
+  
+  .btn-secondary {
+    @apply glass-light hover:bg-white/5 transition-all duration-200;
+  }
+}
+
+/* Custom Scrollbar */
+.scrollbar-thin {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(205, 214, 244, 0.3) transparent;
+}
+
+.scrollbar-thin::-webkit-scrollbar {
+  width: 6px;
+}
+
+.scrollbar-thin::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.scrollbar-thin::-webkit-scrollbar-thumb {
+  background-color: rgba(205, 214, 244, 0.3);
+  border-radius: 3px;
+}
+
+.scrollbar-thin::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(205, 214, 244, 0.5);
+}
+
+/* Markdown Prose Styles */
+.prose {
+  color: inherit;
+}
+
+.prose h1, .prose h2, .prose h3, .prose h4, .prose h5, .prose h6 {
+  color: inherit;
+  font-weight: 600;
+  margin-top: 1.5em;
+  margin-bottom: 0.5em;
+}
+
+.prose h1 { font-size: 1.5em; }
+.prose h2 { font-size: 1.3em; }
+.prose h3 { font-size: 1.1em; }
+
+.prose p {
+  margin-bottom: 1em;
+}
+
+.prose ul, .prose ol {
+  margin-bottom: 1em;
+  padding-left: 1.5em;
+}
+
+.prose li {
+  margin-bottom: 0.25em;
+}
+
+.prose ul {
+  list-style-type: disc;
+}
+
+.prose ol {
+  list-style-type: decimal;
+}
+
+.prose strong {
+  font-weight: 600;
+  color: inherit;
+}
+
+.prose em {
+  font-style: italic;
+}
+
+.prose a {
+  color: #60a5fa;
+  text-decoration: underline;
+}
+
+.prose a:hover {
+  color: #93c5fd;
+}
