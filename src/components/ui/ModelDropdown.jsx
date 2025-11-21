@@ -5,9 +5,12 @@ import { MODELS } from '../../utils/constants'
 const ModelDropdown = ({ selectedModel, onModelChange }) => {
   const [isOpen, setIsOpen] = useState(false)
   const dropdownRef = useRef(null)
-  
-  const selectedModelData = MODELS[selectedModel] || MODELS.GROQ_LLAMA
-  
+
+  // FIX: cari model berdasarkan id, bukan key object
+  const selectedModelData =
+    Object.values(MODELS).find(m => m.id === selectedModel) ||
+    Object.values(MODELS)[0]
+
   useEffect(() => {
     const handleClickOutside = (event) => {
       if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {

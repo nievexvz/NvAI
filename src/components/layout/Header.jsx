@@ -6,7 +6,7 @@ const Header = ({ onClearChat, messageCount }) => {
     <div className="glass-card p-6 mb-6">
       <div className="flex items-center justify-between">
         <div className="flex items-center gap-4">
-          <div className="w-12 h-12 rounded-2xl bg-gradient-to-br from-blue-400 to-purple-500 flex items-center justify-center shadow-lg">
+          <div className="w-12 h-12 rounded-2xl bg-gradient-to-br from-sky-400 to-cyan-500 flex items-center justify-center shadow-lg">
             <Icon icon="mdi:robot" className="text-2xl text-white" />
           </div>
           <div>

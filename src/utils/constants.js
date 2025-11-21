@@ -45,7 +45,7 @@ export const MODELS = {
     provider: 'Groq',
     description: 'Distilled DeepSeek model',
     color: 'from-indigo-500 to-purple-500',
-    icon: 'solar:radar-broken'
+    icon: 'token:whale'
   }
 }
 

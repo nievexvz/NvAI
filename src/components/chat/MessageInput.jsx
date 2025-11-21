@@ -41,11 +41,10 @@ const MessageInput = ({
           onClick={onSendMessage}
           disabled={!input.trim() || isLoading}
           loading={isLoading}
-          icon="mdi:send"
           size="small"
           className="self-end flex-shrink-0"
         >
-          Send
+          <Icon icon="lucide:send" className="text-white text-2xl" />
         </Button>
       </div>
       
